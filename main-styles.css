@@ -1,0 +1,55 @@
+body {
+  background-color: white;
+  font-family: "Noto sans JP", arial, sans-serif;
+}
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: black;
+  text-decoration: underline;
+  padding: 4rem;
+  font-size: 1.2rem;
+}
+nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: #fbb251;
+}
+footer {
+  background-color: black;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+#right-section p {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #fbb251;
+}
+h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+h4 p {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.Signup {
+  background-color: #7097a3;
+  border: white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.4rem 2rem;
+  width: 8rem;
+  display: inline-block;
+  font-size: 1rem;
+}

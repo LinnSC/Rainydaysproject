@@ -1,0 +1,24 @@
+h1 {
+  font-size: 3rem;
+  color: #0a3641;
+}
+h1 p {
+  font-size: 2rem;
+  color: black;
+}
+.dropzone {
+  border: 0.2rem dashed black;
+  width: 10rem;
+  padding: 2rem 10rem;
+}
+.send-message {
+  background-color: black;
+  border: 0.2rem solid white;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  padding: 0.5rem 3rem;
+}

@@ -1,0 +1,55 @@
+h1 {
+  font-size: 6rem;
+  color: #0a3641;
+}
+h2 {
+  font-size: 3.5rem;
+  color: #0a3641;
+}
+h3 {
+  font-size: 3.5rem;
+  color: #0a3641;
+}
+.for-women {
+  background-color: #0a3641;
+  opacity: 70%;
+  border: 0.2rem solid white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  border-radius: 0.75rem;
+  width: 300px;
+  padding: 2rem 2.5rem;
+}
+.for-men {
+  background-color: #0a3641;
+  opacity: 70%;
+  border: 0.2rem solid white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2rem;
+  border-radius: 0.75rem;
+  width: 19rem;
+  padding: 2rem 2.5rem;
+}
+.for-women:hover {
+  background-color: #7097a3;
+  opacity: 70%;
+}
+.for-men:hover {
+  background-color: #7097a3;
+  opacity: 70%;
+}
+.Signup {
+  background-color: #7097a3;
+  border: white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
