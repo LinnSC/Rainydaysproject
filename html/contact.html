@@ -15,7 +15,10 @@
   <body>
     <header>
       <a href="../index.html"
-        ><img src="../images/rainydays-logo.png" alt="Rainydays logo"
+        ><img
+          src="../images/rainydayslogo.png"
+          alt="Rainydayslogo"
+          class="logo"
       /></a>
       <nav>
         <ul>
@@ -27,31 +30,52 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>CONTACT US</h1>
-        <p><label for="Name">Name</label> <input name="Name" id="Name" /></p>
-        <p>
-          <label for="Topic">Topic</label> <input name="Topic" id="Topic" />
-        </p>
-        <p>
-          <label for="E-mail">E-mail</label> <input name="E-mail" id="E-mail" />
-        </p>
-        <p>
-          <label for="Message">Message</label>
-          <input name="Message" id="Message" />
-        </p>
-        <p class="dropzone">Add file - drop file</p>
-        <p>
-          <a href="supportpages/sentmessage.html"
-            ><button class="Send message" type="button">Send</button></a
-          >
-        </p>
-      </section>
-      <section>
+      <h1>CONTACT US</h1>
+      <form action="form-success.php" method="GET">
+        <fieldset class="contactform">
+          <label for="name">Full name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="contact__input"
+            required
+          />
+          <label for="name">Topic</label>
+          <input
+            type="text"
+            name="topic"
+            id="topic"
+            class="contact__input"
+            required
+          />
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="contact__input"
+            required
+          />
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="contact__input"
+          ></textarea>
+          <div dropzone="copy" class="dropzone">Add file - drop file</div>
+        </fieldset>
+        <input type="submit" value="Send" class="send" />
+      </form>
+      <section class="contactinfo">
         <h2>Contact info</h2>
-        <p>Phone: +47 123456789</p>
-        <p>E-mail: post@raindays.com</p>
-        <p>Adress: Navn Navnesensgate 1, 5020 Bergen</p>
+        <p><span class="bold">Phone:</span> +47 123456789</p>
+        <p><span class="bold">E-mail:</span> post@raindays.com</p>
+        <p>
+          <span class="bold">Adress:</span> Navn Navnesensgate 1, 5020 Bergen
+        </p>
       </section>
     </main>
     <footer>
@@ -61,7 +85,7 @@
           Sign up with e-mail to get exlucive offers and information about our
           brand</label
         >
-        <input id="Signup" name="Signup" />
+        <input class="signup-email" id="Signup" name="Signup" />
       </p>
       <p>
         <a href="supportpages/signedup.html"
