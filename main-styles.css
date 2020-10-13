@@ -1,9 +1,7 @@
-body {
-  background-color: white;
-  font-family: "Noto sans JP", arial, sans-serif;
-}
+/*Header styles*/
 ul {
   padding: 0px;
+  text-align: center;
 }
 li {
   display: inline;
@@ -12,8 +10,9 @@ li {
 nav a {
   color: black;
   text-decoration: underline;
-  padding: 4rem;
-  font-size: 1.3rem;
+  padding: 10px 20px;
+  margin: 0 80px;
+  font-size: 20px;
   font-weight: 450;
 }
 nav a:hover {
@@ -24,6 +23,30 @@ nav a:hover {
   text-decoration: underline;
   text-decoration-color: #fbb251;
 }
+
+/*Main styles*/
+body {
+  background-color: white;
+  font-family: "Noto sans JP", arial, sans-serif;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.logo {
+  max-width: 12rem;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*Footer styles*/
+
+.content-wrap-footer {
+  padding: 10px 30px;
+}
 footer {
   background-color: black;
   color: white;
@@ -32,7 +55,7 @@ footer a {
   color: white;
   text-decoration: none;
 }
-#right-section p {
+.right-section p {
   text-decoration: underline;
 }
 
@@ -41,16 +64,16 @@ footer a:hover {
   color: #fbb251;
 }
 h4 {
-  font-size: 1.2rem;
+  font-size: 20px;
   font-weight: bold;
 }
-h4 p {
-  font-size: 1rem;
+h4 ~ p {
+  font-size: 16px;
   font-weight: lighter;
 }
 .Signup {
-  background-color: #7097a3;
-  border: white;
+  background-color: black;
+  border-color: white;
   color: white;
   text-align: center;
   text-decoration: none;
@@ -61,13 +84,12 @@ h4 p {
   display: inline-block;
   font-size: 1rem;
 }
-.logo {
-  max-width: 12rem;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.Signup:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
 }
 .signup-email {
   display: block;
+  margin: 20px;
 }
