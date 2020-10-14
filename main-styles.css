@@ -1,19 +1,38 @@
+/*Border box fix*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /*Header styles*/
+
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 ul {
-  padding: 0px;
   text-align: center;
+  font-size: 0;
 }
 li {
-  display: inline;
+  display: inline-block;
+  width: 25%;
 }
 
 nav a {
   color: black;
   text-decoration: underline;
-  padding: 10px 20px;
-  margin: 0 80px;
   font-size: 20px;
   font-weight: 450;
+  padding: 10px 20px;
 }
 nav a:hover {
   text-decoration: underline;
@@ -25,6 +44,7 @@ nav a:hover {
 }
 
 /*Main styles*/
+
 body {
   background-color: white;
   font-family: "Noto sans JP", arial, sans-serif;
@@ -34,18 +54,15 @@ body {
   max-width: 1500px;
   margin: 0 auto;
 }
-.logo {
-  max-width: 12rem;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
 
 /*Footer styles*/
 
 .content-wrap-footer {
-  padding: 10px 30px;
+}
+.content-wrap-footer:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 footer {
   background-color: black;
@@ -91,5 +108,27 @@ h4 ~ p {
 }
 .signup-email {
   display: block;
+  width: 90%;
   margin: 20px;
+}
+.left-section {
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  padding: 0 10px;
+  text-align: center;
+  border-right: 1px solid white;
+}
+.mid-section {
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  padding: 0 40px;
+  border-right: 1px solid white;
+}
+.right-section {
+  width: 33.33%;
+  height: 300px;
+  float: left;
+  padding: 0 40px;
 }
