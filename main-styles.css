@@ -16,6 +16,7 @@ html {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   display: block;
 }
 ul {
@@ -31,7 +32,7 @@ nav a {
   color: black;
   text-decoration: underline;
   font-size: 20px;
-  font-weight: 450;
+  font-weight: 400;
   padding: 10px 20px;
 }
 nav a:hover {
@@ -41,6 +42,15 @@ nav a:hover {
 .active {
   text-decoration: underline;
   text-decoration-color: #fbb251;
+}
+
+.content-wrap-header {
+  background: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 5px;
 }
 
 /*Main styles*/
@@ -53,12 +63,11 @@ body {
 .content-wrap {
   max-width: 1500px;
   margin: 0 auto;
+  padding: 150px 50px;
 }
 
 /*Footer styles*/
 
-.content-wrap-footer {
-}
 .content-wrap-footer:after {
   content: "";
   display: table;
