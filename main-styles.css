@@ -9,16 +9,64 @@ html {
   box-sizing: inherit;
 }
 
+/*Grids*/
+
+body {
+  background: white;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 /*Header styles*/
 
 .logo {
   max-width: 200px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10px;
-  display: block;
 }
+.logo-icons-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.wrap {
+  display: flex;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.rdlogo {
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+}
+.content-wrap-header {
+  background: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.wrap i {
+  margin: 6px;
+  font-size: 22px;
+  padding: 5px;
+  display: inline-block;
+  color: black;
+}
+
+nav {
+  clear: both;
+}
+
 ul {
   text-align: center;
   font-size: 0;
@@ -44,15 +92,6 @@ nav a:hover {
   text-decoration-color: #fbb251;
 }
 
-.content-wrap-header {
-  background: white;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-bottom: 5px;
-}
-
 /*Main styles*/
 
 body {
@@ -63,27 +102,10 @@ body {
 .content-wrap {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 150px 50px;
+  padding: 10em 5em;
 }
 
 /*Footer styles*/
-
-.content-wrap-footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-footer {
-  background-color: black;
-  color: white;
-}
-footer a {
-  color: white;
-  text-decoration: none;
-}
-.right-section p {
-  text-decoration: underline;
-}
 
 footer a:hover {
   text-decoration: none;
@@ -92,10 +114,12 @@ footer a:hover {
 h4 {
   font-size: 20px;
   font-weight: bold;
+  color: white;
 }
 h4 ~ p {
   font-size: 16px;
   font-weight: lighter;
+  color: white;
 }
 .Signup {
   background-color: black;
@@ -118,26 +142,35 @@ h4 ~ p {
 .signup-email {
   display: block;
   width: 90%;
-  margin: 20px;
+  margin: 2em;
 }
-.left-section {
-  width: 33.33%;
-  height: 300px;
-  float: left;
-  padding: 0 10px;
+
+/*Footer grids*/
+
+footer {
+  color: white;
+}
+.content-wrap-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.2em;
+}
+.footer-section {
+  background-color: black;
+  padding-left: 3em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+}
+
+.footer-left p {
   text-align: center;
-  border-right: 1px solid white;
 }
-.mid-section {
-  width: 33.33%;
-  height: 300px;
-  float: left;
-  padding: 0 40px;
-  border-right: 1px solid white;
+
+.footer-right p {
+  text-decoration: underline;
 }
-.right-section {
-  width: 33.33%;
-  height: 300px;
-  float: left;
-  padding: 0 40px;
+
+footer a {
+  color: white;
+  text-decoration: none;
 }

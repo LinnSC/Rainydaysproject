@@ -10,20 +10,36 @@
       rel="stylesheet"
     />
     <link href="../../main-styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b4dda9bfdb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <div class="content-wrap-header">
-        <a href="../../index.html"
-          ><img
-            src="../../images/rainydayslogo.png"
-            alt="Rainydays logo"
-            class="logo"
-        /></a>
+        <section class="logo-icons-container">
+          <div class="wrap rdlogo">
+            <a href="../../index.html">
+              <img
+                src="../../images/rainydayslogo.png"
+                alt="Rainydays logo"
+                class="logo"
+            /></a>
+          </div>
+          <div class="wrap icons">
+            <a href="../search.html"><i class="fas fa-search"></i></a>
+            <a href="../favourites.html"><i class="fas fa-heart"></i></a>
+            <a href="../shopping-chart.html"
+              ><i class="fas fa-shopping-cart"></i
+            ></a>
+            <a href="../login.html"><i class="fas fa-user"></i></a>
+          </div>
+        </section>
         <nav>
           <ul>
             <li><a href="womensjackets-p1.html">Women</a></li>
-            <li><a href="mensjackets-p1.html">Men</a></li>
+            <li><a href="mensjackets-p1.html" class="active">Men</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../contact.html">Contact</a></li>
           </ul>
@@ -48,7 +64,7 @@
     </main>
     <footer>
       <div class="content-wrap-footer">
-        <section class="left-section">
+        <section class="footer-section footer-left">
           <h4>Become a member</h4>
           <p>
             <label for="Signup">
@@ -58,21 +74,21 @@
             <input class="signup-email" id="Signup" name="Signup" />
           </p>
           <p>
-            <a href="html/supportpages/signedup.html"
+            <a href="../supportpages/signedup.html"
               ><button class="Signup" type="button">Sign up</button></a
             >
           </p>
         </section>
-        <section class="mid-section">
+        <section class="footer-section">
           <h4>Help</h4>
           <p>
-            <a href="html/supportpages/thisisalink.html">Customer service</a>
+            <a href="../supportpages/thisisalink.html">Customer service</a>
           </p>
-          <p><a href="html/supportpages/thisisalink.html">FAQ</a></p>
-          <p><a href="html/supportpages/thisisalink.html">Payment</a></p>
-          <p><a href="html/supportpages/thisisalink.html">Return</a></p>
+          <p><a href="../supportpages/thisisalink.html">FAQ</a></p>
+          <p><a href="../supportpages/thisisalink.html">Payment</a></p>
+          <p><a href="../supportpages/thisisalink.html">Return</a></p>
         </section>
-        <section class="right-section">
+        <section class="footer-section footer-right">
           <h4>Follow us</h4>
           <p>
             <a href="https://www.facebook.com/" target="_blank">Facebook</a>

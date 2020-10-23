@@ -65,7 +65,7 @@ h3 ~ p {
   opacity: 70%;
 }
 .backgroundimg {
-  background-image: url(../images/bacground-index.jpg);
+  background-image: url(../images/index/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
@@ -78,4 +78,9 @@ h3 ~ p {
 .newcollection {
   margin: 0 auto;
   width: 960px;
+}
+
+.carousel-img {
+  width: 200px;
+  height: 250px;
 }

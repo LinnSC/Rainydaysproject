@@ -11,78 +11,98 @@
     />
     <link href="../main-styles.css" rel="stylesheet" />
     <link href="../Styles/contact.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/b4dda9bfdb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <div class="content-wrap-header">
-        <a href="../index.html"
-          ><img
-            src="../images/rainydayslogo.png"
-            alt="Rainydays logo"
-            class="logo"
-        /></a>
+        <section class="logo-icons-container">
+          <div class="wrap rdlogo">
+            <a href="../index.html">
+              <img
+                src="../images/rainydayslogo.png"
+                alt="Rainydays logo"
+                class="logo"
+            /></a>
+          </div>
+          <div class="wrap icons">
+            <a href="search.html"><i class="fas fa-search"></i></a>
+            <a href="favourites.html"><i class="fas fa-heart"></i></a>
+            <a href="shopping-chart.html"
+              ><i class="fas fa-shopping-cart"></i
+            ></a>
+            <a href="login.html"><i class="fas fa-user"></i></a>
+          </div>
+        </section>
         <nav>
           <ul>
             <li><a href="jackets/womensjackets-p1.html">Women</a></li>
             <li><a href="jackets/mensjackets-p1.html">Men</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <h1>CONTACT US</h1>
-      <form action="form-success.php" method="GET">
-        <fieldset class="contactform">
-          <label for="name">Full name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="contact__input"
-            required
-          />
-          <label for="name">Topic</label>
-          <input
-            type="text"
-            name="topic"
-            id="topic"
-            class="contact__input"
-            required
-          />
-          <label for="email">E-mail</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="contact__input"
-            required
-          />
-          <label for="message">Message</label>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            class="contact__input"
-          ></textarea>
-          <div dropzone="copy" class="dropzone">Add file - drop file</div>
-        </fieldset>
-        <input type="submit" value="Send" class="send" />
-      </form>
-      <section class="contactinfo">
-        <h2>Contact info</h2>
-        <p><span class="bold">Phone:</span> +47 123456789</p>
-        <p><span class="bold">E-mail:</span> post@raindays.com</p>
-        <p>
-          <span class="bold">Adress:</span> Navn Navnesensgate 1, 5020 Bergen
-        </p>
-      </section>
+      <div class="content-wrap">
+        <h1>CONTACT US</h1>
+        <form action="form-success.php" method="GET">
+          <fieldset class="contactform">
+            <label for="name">Full name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="contact__input"
+              required
+            />
+            <label for="name">Topic</label>
+            <input
+              type="text"
+              name="topic"
+              id="topic"
+              class="contact__input"
+              required
+            />
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="contact__input"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <div dropzone="copy" class="dropzone">
+              <span class="bold">Add file</span> - drop file
+            </div>
+          </fieldset>
+          <input type="submit" value="Send" class="send" />
+        </form>
+        <section class="contactinfo">
+          <h2>Contact info</h2>
+          <p><span class="bold">Phone:</span> +47 123456789</p>
+          <p><span class="bold">E-mail:</span> post@raindays.com</p>
+          <p>
+            <span class="bold">Adress:</span> Navn Navnesensgate 1, 5020 Bergen
+          </p>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="content-wrap-footer">
-        <section class="left-section">
+        <section class="footer-section footer-left">
           <h4>Become a member</h4>
           <p>
             <label for="Signup">
@@ -92,21 +112,21 @@
             <input class="signup-email" id="Signup" name="Signup" />
           </p>
           <p>
-            <a href="html/supportpages/signedup.html"
+            <a href="supportpages/signedup.html"
               ><button class="Signup" type="button">Sign up</button></a
             >
           </p>
         </section>
-        <section class="mid-section">
+        <section class="footer-section">
           <h4>Help</h4>
           <p>
-            <a href="html/supportpages/thisisalink.html">Customer service</a>
+            <a href="supportpages/thisisalink.html">Customer service</a>
           </p>
-          <p><a href="html/supportpages/thisisalink.html">FAQ</a></p>
-          <p><a href="html/supportpages/thisisalink.html">Payment</a></p>
-          <p><a href="html/supportpages/thisisalink.html">Return</a></p>
+          <p><a href="supportpages/thisisalink.html">FAQ</a></p>
+          <p><a href="supportpages/thisisalink.html">Payment</a></p>
+          <p><a href="supportpages/thisisalink.html">Return</a></p>
         </section>
-        <section class="right-section">
+        <section class="footer-section footer-right">
           <h4>Follow us</h4>
           <p>
             <a href="https://www.facebook.com/" target="_blank">Facebook</a>
