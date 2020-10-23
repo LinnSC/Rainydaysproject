@@ -1,3 +1,8 @@
+.content-wrap {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
 h1 {
   font-size: 3rem;
   color: #0a3641;
@@ -11,6 +16,27 @@ h2 {
 h1 p {
   font-size: 2rem;
   color: black;
+}
+
+.img-text-wrap {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.cell-img {
+  flex: 1.5;
+  margin: 2%;
+}
+
+.cell-text {
+  flex: 5;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
 }
 
 .contactinfo {

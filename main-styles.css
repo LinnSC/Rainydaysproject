@@ -40,9 +40,6 @@ body {
   margin-bottom: 5px;
 }
 
-.rdlogo {
-}
-
 .icons {
   position: absolute;
   right: 5%;
@@ -102,7 +99,7 @@ body {
 .content-wrap {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 10em 5em;
+  padding: 10em 6em;
 }
 
 /*Footer styles*/
