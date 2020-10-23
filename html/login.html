@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link href="../main-styles.css" rel="stylesheet" />
+    <link href="../Styles/login.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/b4dda9bfdb.js"
       crossorigin="anonymous"
@@ -47,47 +48,76 @@
       </div>
     </header>
     <main>
-      <section>
-        <h1>LOGIN</h1>
-        <p>
-          <label for="E-mail">E-mail</label>
-          <input name="E-mail" id="E-mail" />
-        </p>
-        <p>
-          <label for="Password">Password</label>
-          <input name="Password" id="Password" />
-        </p>
-        <p><a href="forgotpassword.html">Forgot password</a></p>
-        <p>
-          <a href="supportpages/sentmessage.html"
-            ><button class="Send message" type="button">Send</button></a
-          >
-        </p>
-      </section>
-      <section>
-        <h2>NOT A MEMBER YET?</h2>
-        <h3>Create an account</h3>
-        <p>
-          <label for="First name">First name</label>
-          <input name="First name" id="First name" />
-        </p>
-        <p>
-          <label for="Last name">Last name</label>
-          <input name="Last name" id="Last name" />
-        </p>
-        <p>
-          <label for="E-mail">E-mail</label> <input name="E-mail" id="E-mail" />
-        </p>
-        <p>
-          <label for="Password">Password</label>
-          <input name="Password" id="Password" />
-        </p>
-        <p>
-          <a href="supportpages/signedup-member.html"
-            ><button class="Sign up" type="button">Sign up</button></a
-          >
-        </p>
-      </section>
+      <div class="content-wrap">
+        <section class="form-wrap">
+          <h1>LOGIN</h1>
+          <form action="form-success.php" method="GET">
+            <fieldset class="loginform">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contact__input"
+                required
+              />
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="contact__input"
+                required
+              />
+              <div class="forgotpassword">
+                <a href="forgotpassword.html">Forgot password</a>
+              </div>
+            </fieldset>
+            <input type="submit" value="Log in" class="send" />
+          </form>
+        </section>
+        <section class="form-wrap">
+          <h2>NOT A MEMBER YET?</h2>
+          <h3>Create an account</h3>
+          <form action="form-success.php" method="GET">
+            <fieldset class="contactform">
+              <label for="name">First name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="contact__input"
+                required
+              />
+              <label for="name">Last name</label>
+              <input
+                type="text"
+                name="topic"
+                id="topic"
+                class="contact__input"
+                required
+              />
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="contact__input"
+                required
+              />
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="contact__input"
+                required
+              />
+            </fieldset>
+            <input type="submit" value="Sign up" class="send" />
+          </form>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="content-wrap-footer">

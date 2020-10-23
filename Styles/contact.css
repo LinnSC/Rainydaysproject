@@ -9,10 +9,6 @@ h1 {
   font-size: 3rem;
   color: #0a3641;
 }
-h1 p {
-  font-size: 2rem;
-  color: black;
-}
 
 fieldset {
   border: none;
@@ -63,6 +59,7 @@ label {
   width: 10rem;
   display: inline-block;
   margin: auto;
+  margin-top: 2rem;
 }
 .contactform {
   color: black;

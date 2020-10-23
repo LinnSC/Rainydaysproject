@@ -1,0 +1,57 @@
+main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  text-align: center;
+}
+
+.form-wrap {
+  margin-top: 6rem;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #0a3641;
+}
+
+h2 {
+  color: #0a3641;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: black;
+  font-size: 1.5rem;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact__input {
+  display: block;
+  padding: 0.5rem;
+  width: 30rem;
+  margin: 0.5rem;
+}
+
+.send {
+  background-color: black;
+  border: white;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  width: 10rem;
+  display: inline-block;
+  margin: auto;
+  margin-top: 2rem;
+}
