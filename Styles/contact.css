@@ -22,7 +22,7 @@ h2 p {
   color: black;
   font-size: 1rem;
 }
-label {
+.form-label {
   font-size: 1.1rem;
   font-weight: 600;
 }
@@ -46,7 +46,7 @@ label {
   margin-top: 30px;
 }
 
-.send {
+.button {
   background-color: black;
   border: white;
   color: white;
