@@ -36,8 +36,8 @@ body {
 
 .wrap {
   display: flex;
-  margin-top: 2px;
-  margin-bottom: 5px;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
 }
 
 .icons {
@@ -51,6 +51,7 @@ body {
   top: 0;
   width: 100%;
   padding-bottom: 5px;
+  z-index: 100;
 }
 .wrap i {
   margin: 6px;
