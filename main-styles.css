@@ -15,13 +15,44 @@ html {
   box-sizing: inherit;
 }
 
+/*Body*/
+
+body {
+  background-color: white;
+  font-family: "Noto sans JP", arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
 /*Grids*/
 
 body {
-  background: white;
-  min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+/*Div styles*/
+
+.button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  padding: 0.5rem 2rem;
+  width: 10rem;
+  display: inline-block;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
 
 /*Header styles*/
@@ -50,7 +81,7 @@ body {
   position: absolute;
   right: 5%;
 }
-.content-wrap-header {
+header {
   background: white;
   text-align: center;
   position: fixed;
@@ -98,11 +129,6 @@ nav a:hover {
 
 /*Main styles*/
 
-body {
-  background-color: white;
-  font-family: "Noto sans JP", arial, sans-serif;
-  margin: 0;
-}
 .content-wrap {
   max-width: 1500px;
   margin: 0 auto;
@@ -125,28 +151,21 @@ h4 ~ p {
   font-weight: lighter;
   color: white;
 }
-.Signup {
-  background-color: black;
-  border-color: white;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  border-radius: 0.5rem;
-  padding: 0.4rem 2rem;
-  width: 8rem;
-  display: inline-block;
-  font-size: 1rem;
-}
-.Signup:hover {
-  color: black;
-  background-color: white;
-  border-color: white;
-}
+
 .signup-email {
   display: block;
   width: 90%;
   margin: 2em;
+}
+
+.footerbutton {
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  padding: 0.4rem 1.7rem;
+  width: 9rem;
+  margin-top: 1rem;
 }
 
 /*Footer grids*/

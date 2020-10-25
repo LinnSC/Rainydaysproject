@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays | Contact us</title>
+    <title>Rainydays | Check out</title>
     <meta name="keywords" content="jackets, rain jackets" />
     <meta name="description" content="An online store for rain jackets" />
     <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
@@ -47,136 +47,202 @@
       </div>
     </header>
     <main>
-      <section>
+      <div class="content-wrap">
         <h1>Check out</h1>
-      </section>
-      <section>
         <h2>Check out as</h2>
-      </section>
-      <section>
-        <h3>Member</h3>
-        <div><label for="Email"> E-mail</label></div>
-        <div><input name="Email" id="Email" /></div>
-        <div><label for="Password"> Password</label></div>
-        <div><input name="Password" id="Password" /></div>
-        <p>
-          <a href="supportpages/checkoutsuccess.html">
-            <button class="Login" type="button">Log in</button></a
-          >
-        </p>
-      </section>
-      <section>
-        <h3>Guest</h3>
-        <p>
-          <label for="E-mail2"> E-mail*</label>
-          <input name="E-mail2" id="E-mail2" />
-        </p>
-        <p>
-          <label for="Full name"> Full name*</label>
-          <input name="Full name" id="Full name" />
-        </p>
-        <p>
-          <label for="Street"> Street*</label>
-          <input name="Street" id="Street" /><label for="Street number">
-            Street no*</label
-          >
-          <input name="Street number" id="Street number" />
-        </p>
-        <p>
-          <label for="Postal code"> Postal code*</label>
-          <input name="Postal code" id="Postal code" />
-
-          <label for="City"> City*</label>
-          <input name="City" id="City" />
-        </p>
-        <p>
-          <label for="Country"> Country*</label>
-          <input name="Country" id="Country" />
-        </p>
-        <p>
-          <label for="Phone"> Phone number*</label>
-          <input name="Phone" id="Phone" />
-        </p>
-      </section>
-      <section>
-        <h3>Shipping</h3>
-        <p>
-          <input
-            type="checkbox"
-            id="Regular shipping 49 kr"
-            name="Regular shipping 49 kr"
-          />
-          <label for="Regular shipping 49 kr"> Regular shipping / 49,-</label>
-        </p>
-        <p>
-          <input
-            type="checkbox"
-            id="Express shipping 99 kr"
-            name="Express shipping 99 kr"
-          />
-          <label for="Express shipping 99 kr"> Express shipping/ 99,-</label>
-        </p>
-      </section>
-      <section>
-        <h3>Payment</h3>
-        <p>
-          <input type="checkbox" id="creditcard" name="creditcard" />
-          <label for="creditcard"> Credit card</label>
-        </p>
-        <p>
-          <input type="checkbox" id="PayPal" name="PayPal" /><label
-            for="PayPal"
-          >
-            PayPal</label
-          >
-        </p>
-      </section>
-      <section>
-        <h3>Credit card</h3>
-        <p>
-          <label for="cardholder"> Card holder*</label>
-          <input name="cardholder" id="cardholder" />
-        </p>
-        <p>
-          <label for="cardnumber"> Card number*</label>
-          <input name="cardnumber" id="cardnumber" />
-        </p>
-        <p>
-          <label for="date and year"> Date/year*</label>
-          <input name="date and year" id="date and year" />
-          <label for="CVC or CVV"> CVC/ CVV*</label>
-          <input name="CVC or CVV" id="CVC or CVV" />
-        </p>
-      </section>
-      <section>
-        <p>
-          <input
-            type="checkbox"
-            id="i agree to the terms and conditions"
-            name="i agree to the terms and conditions"
-          />
-          <label for="i agree to the terms and conditions">
-            I agree to the terms and conditions*</label
-          >
-        </p>
-        <p>
-          <a href="supportpages/checkoutsuccess.html"
-            ><button class="Place order" type="button">Place order</button></a
-          >
-        </p>
-      </section>
-      <section>
-        <h2>Check out summary</h2>
-        <p>Item name 2999,00 kr</p>
-        <p>Size M</p>
-        <p><a href="supportpages/thisisalink.html">Remove item</a></p>
-        <p>Order total 2999,00 kr</p>
-        <p>
-          <a href="supportpages/checkoutsuccess.html">
-            <button class="Place order" type="button">Place order</button></a
-          >
-        </p>
-      </section>
+        <section>
+          <form action="form-success.php" method="GET">
+            <h3>Member</h3>
+            <label class="form-label" for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="contact__input"
+              required
+            />
+            <label class="form-label" for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="contact__input"
+              required
+            />
+            <input type="submit" value="Sign in" class="button" />
+          </form>
+        </section>
+        <section>
+          <form action="form-success.php" method="GET">
+            <h3>Guest</h3>
+            <label class="form-label" for="email-guest">E-mail</label>
+            <input
+              type="email-guest"
+              name="email-guest"
+              id="email-guest"
+              class="contact__input"
+              required
+            />
+            <label class="form-label" for="name">Full name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="contact__input"
+              required
+            />
+            <div class="row">
+              <div class="row-70">
+                <label class="form-label" for="street">Street</label>
+                <input
+                  type="text"
+                  name="street"
+                  id="street"
+                  class="contact__input"
+                  required
+                />
+              </div>
+              <div class="row-30">
+                <label class="form-label" for="street">Street No</label>
+                <input
+                  type="number"
+                  name="street-number"
+                  id="street-number"
+                  class="contact__input"
+                  required
+                />
+              </div>
+            </div>
+            <label class="form-label" for="co-address"
+              >c/o Address / Company</label
+            >
+            <input
+              type="text"
+              name="co-address"
+              id="co-address"
+              class="contact__input"
+              required
+            />
+            <div class="row">
+              <div class="row-30">
+                <label class="form-label" for="postal-code">Postal code</label>
+                <input
+                  type="number"
+                  name="postal-code"
+                  id="postal-code"
+                  class="contact__input"
+                  required
+                />
+              </div>
+              <div class="row-70">
+                <label class="form-label" for="street">City</label>
+                <input
+                  type="text"
+                  name="street-number"
+                  id="street-number"
+                  class="contact__input"
+                  required
+                />
+              </div>
+            </div>
+            <label class="form-label" for="country">Country</label>
+            <input
+              type="text"
+              name="country"
+              id="country"
+              class="contact__input"
+              placeholder="Norway"
+              required
+            />
+            <label class="form-label" for="phone-number">Phone number</label>
+            <input
+              type="number"
+              name="phone-number"
+              id="phone-number"
+              class="phone-number"
+              placeholder="+47"
+              required
+            />
+          </form>
+        </section>
+        <section>
+          <h3>Shipping</h3>
+          <p>
+            <input
+              type="checkbox"
+              id="Regular shipping 49 kr"
+              name="Regular shipping 49 kr"
+            />
+            <label for="Regular shipping 49 kr"> Regular shipping / 49,-</label>
+          </p>
+          <p>
+            <input
+              type="checkbox"
+              id="Express shipping 99 kr"
+              name="Express shipping 99 kr"
+            />
+            <label for="Express shipping 99 kr"> Express shipping/ 99,-</label>
+          </p>
+        </section>
+        <section>
+          <h3>Payment</h3>
+          <p>
+            <input type="checkbox" id="creditcard" name="creditcard" />
+            <label for="creditcard"> Credit card</label>
+          </p>
+          <p>
+            <input type="checkbox" id="PayPal" name="PayPal" /><label
+              for="PayPal"
+            >
+              PayPal</label
+            >
+          </p>
+        </section>
+        <section>
+          <h3>Credit card</h3>
+          <p>
+            <label for="cardholder"> Card holder*</label>
+            <input name="cardholder" id="cardholder" />
+          </p>
+          <p>
+            <label for="cardnumber"> Card number*</label>
+            <input name="cardnumber" id="cardnumber" />
+          </p>
+          <p>
+            <label for="date and year"> Date/year*</label>
+            <input name="date and year" id="date and year" />
+            <label for="CVC or CVV"> CVC/ CVV*</label>
+            <input name="CVC or CVV" id="CVC or CVV" />
+          </p>
+        </section>
+        <section>
+          <p>
+            <input
+              type="checkbox"
+              id="i agree to the terms and conditions"
+              name="i agree to the terms and conditions"
+            />
+            <label for="i agree to the terms and conditions">
+              I agree to the terms and conditions*</label
+            >
+          </p>
+          <p>
+            <input type="submit" value="Place order" class="button-large" />
+          </p>
+        </section>
+        <section>
+          <h2>Check out summary</h2>
+          <p>Item name 2999,00 kr</p>
+          <p>Size M</p>
+          <p><a href="supportpages/thisisalink.html">Remove item</a></p>
+          <p>Order total 2999,00 kr</p>
+          <p>
+            <a href="supportpages/checkoutsuccess.html">
+              <button class="Place order" type="button">Place order</button></a
+            >
+          </p>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="content-wrap-footer">
