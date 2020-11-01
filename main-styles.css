@@ -111,17 +111,17 @@ nav a:hover {
 
 main {
   margin-top: 12%;
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-bottom: 5%;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.3rem;
   color: #0a3641;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #0a3641;
 }
 
@@ -286,13 +286,22 @@ footer {
 
 @media only screen and (max-width: 480px) {
   body {
-    margin-top: 15%;
-    min-width: 480px;
+    margin-top: 10%;
+    max-width: 480px;
   }
 
   main {
     margin-left: 2%;
     margin-right: 2%;
+    margin-bottom: 3%;
+  }
+
+  .button-wide {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.3rem 1rem;
+    width: 15rem;
+    margin-top: 0.5rem;
   }
 
   /*Header*/
@@ -317,7 +326,7 @@ footer {
   /*Main*/
 
   h1 {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   h2 {
     font-size: 1.3rem;
@@ -378,8 +387,8 @@ footer {
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    margin-top: 15%;
-    min-width: 320px;
+    margin-top: 5%;
+    min-width: 481px;
   }
 
   main {

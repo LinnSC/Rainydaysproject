@@ -12,9 +12,9 @@ main {
   background-repeat: no-repeat;
   max-width: 100%;
   display: block;
-  padding-top: 20rem;
-  padding-bottom: 15rem;
-  height: 800px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  height: 700px;
   text-align: center;
 }
 
@@ -29,13 +29,13 @@ h2 {
   color: #fbb251;
 }
 
-/* Carousel*/
+/* collection*/
 
-.carousel {
+.collection {
   display: flex;
   flex-wrap: wrap;
 }
-.carousel-img {
+.collection-img {
   padding: 2%;
   flex: 1 18%;
 }
@@ -52,11 +52,89 @@ h2 {
   border-color: #fbb251;
   color: #fbb251;
   margin-top: 2rem;
-  margin-bottom: 15%;
+  margin-bottom: 5%;
 }
 
 .ncbutton:hover {
   background-color: #fbb251;
   border-color: #0a3641;
   color: #0a3641;
+}
+/*Media queries*/
+
+/*Mobile styles*/
+
+@media only screen and (max-width: 480px) {
+  .raincoats {
+    background-image: url(../images/newcollection/raincoats-mob.jpg);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 230px;
+  }
+
+  h1 {
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  /* Collection */
+
+  .collection {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .collection-img {
+    padding: 2%;
+    flex: 1;
+  }
+  .hide {
+    display: none;
+  }
+
+  .ncbutton {
+    margin-top: 2rem;
+    margin-bottom: 5%;
+  }
+}
+
+/*Tablet styles*/
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .raincoats {
+    background-image: url(../images/newcollection/raincoats-mob.jpg);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Collection */
+
+  .collection {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .collection-img {
+    padding: 2%;
+    flex: 1;
+  }
+  .hide {
+    display: none;
+  }
+
+  .ncbutton {
+    margin-top: 2rem;
+    margin-bottom: 5%;
+  }
 }
