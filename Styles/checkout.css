@@ -72,7 +72,7 @@ h2 {
   margin-top: 1%;
 }
 
-.box2 a {
+.remove {
   font-size: 1rem;
   font-weight: 500;
   margin-top: 2%;
@@ -106,6 +106,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-gap: 4%;
+  margin-bottom: 10%;
   grid-template-areas:
     "box1  box2"
     "box1  . ";
@@ -138,11 +139,11 @@ main {
 @media only screen and (max-width: 800px) {
   main {
     margin-top: 20%;
-    margin-bottom: 35%;
+    margin-bottom: 10%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-gap: 5%;
+    grid-gap: 1%;
     grid-template-areas:
       "box2"
       "box1";
@@ -156,7 +157,7 @@ main {
     font-size: 0.9rem;
     font-weight: 600;
   }
-  .box2 a {
+  .remove {
     font-size: 0.9rem;
     font-weight: 400;
   }
