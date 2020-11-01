@@ -1,33 +1,27 @@
 main {
   text-align: center;
+  margin: 10% 0;
 }
+
+.backgroundimg {
+  background-image: url(../images/index/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  display: block;
+  padding: 100px;
+  margin: 0;
+  height: 800px;
+  text-align: center;
+}
+
 h1 {
   font-size: 5rem;
   color: white;
   text-shadow: 0.5rem 0.5rem 0.5rem #0a3641;
   margin-bottom: 60px;
 }
-h2 {
-  font-size: 3.5rem;
-  color: #0a3641;
-}
-h3 {
-  font-size: 3.5rem;
-  color: #0a3641;
-}
-h3 ~ p {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: black;
-}
-.insta-rainydays {
-  text-decoration: none;
-  color: black;
-}
-.insta-rainydays:hover {
-  text-decoration: underline;
-  color: #fbb251;
-}
+
 .button-big {
   background-color: #0a3641;
   opacity: 70%;
@@ -45,43 +39,58 @@ h3 ~ p {
 
 .button-big:hover {
   background-color: #7097a3;
+  color: white;
   opacity: 70%;
 }
-.backgroundimg {
-  background-image: url(../images/index/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  max-width: 100%;
-  display: block;
-  padding: 100px;
-  margin: 10px 0px;
-  height: 800px;
-  text-align: center;
+
+h2 {
+  font-size: 3.5rem;
+  color: #0a3641;
+}
+h3 {
+  font-size: 3.5rem;
+  color: #0a3641;
+}
+h3 ~ p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: black;
 }
 
-.carousel-img {
-  width: 200px;
-  height: 250px;
+p a {
+  text-decoration: none;
 }
 
-/*Instagram collage*/
+/*News*/
 
-.insta {
+.news {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
-.insta-post {
-  padding: 0.5%;
-  flex: 1 19.5%;
+.news-jacket {
+  padding: 3%;
+  flex: 1 30.33%;
 }
 
 .img {
   width: 100%;
   height: auto;
   border: 0.2rem solid black;
+}
+/*Instagram collage*/
+
+.insta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+.insta-post {
+  padding: 0.5%;
+  flex: 1 24.5%;
 }
 
 .insta-name {

@@ -1,0 +1,124 @@
+main {
+  margin-bottom: 10%;
+}
+
+fieldset {
+  border: none;
+  margin-top: 2rem;
+}
+
+legend {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact__input {
+  display: block;
+  padding: 0.5rem;
+  width: 25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.row-small {
+  width: 5.5rem;
+  display: inline;
+}
+.row-wide {
+  width: 18.5rem;
+  display: inline;
+  margin-left: 0.7rem;
+}
+
+.city-label {
+  margin-left: 0.7rem;
+}
+
+.radio-btn {
+  display: block;
+}
+
+.radio-btn {
+  margin-top: 2%;
+}
+
+.row-50 {
+  width: 5rem;
+  display: inline;
+}
+.cvc-label {
+  margin-left: 3rem;
+}
+
+.terms {
+  margin-top: 5%;
+}
+
+.product-img {
+  max-width: 50%;
+  height: auto;
+}
+
+.box2 p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1%;
+}
+
+.box2 a {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.quantity {
+  max-width: 3rem;
+  margin-left: 2px;
+}
+
+.line {
+  margin-top: 10%;
+}
+
+/*Grid*/
+
+.box1 {
+  grid-area: box1;
+  border: 2px solid black;
+  padding: 4%;
+}
+.box2 {
+  grid-area: box2;
+  border: 2px solid black;
+  padding: 4%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5%;
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box1 box1 . . ";
+}
+
+/*Flex*/
+
+.box2-flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+.flex2 {
+  flex: 2;
+}

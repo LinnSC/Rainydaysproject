@@ -42,3 +42,7 @@ h2 span {
   position: absolute;
   right: 2%;
 }
+
+.product-info i {
+  color: #fbb251;
+}

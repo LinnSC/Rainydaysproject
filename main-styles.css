@@ -20,7 +20,6 @@ html {
 body {
   background-color: white;
   font-family: "Noto sans JP", arial, sans-serif;
-  margin: 0;
   min-height: 100vh;
 }
 
@@ -31,36 +30,18 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-/*Div styles*/
-
-.button {
-  background-color: black;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.2em;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  border: 2px solid white;
-  padding: 0.5rem 2rem;
-  width: 10rem;
-  display: inline-block;
-  margin: auto;
-  margin-top: 2rem;
-}
-
-.button:hover {
-  background-color: white;
-  color: black;
-  border: 2px solid black;
-}
-
 /*Header styles*/
 
-.logo {
-  max-width: 200px;
-  height: auto;
+header {
+  background: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 5px;
+  z-index: 100;
 }
+
 .logo-icons-container {
   display: flex;
   align-items: center;
@@ -77,19 +58,6 @@ body {
   margin-bottom: 0.5%;
 }
 
-.icons {
-  position: absolute;
-  right: 5%;
-}
-header {
-  background: white;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-bottom: 5px;
-  z-index: 100;
-}
 .wrap i {
   margin: 6px;
   font-size: 22px;
@@ -98,17 +66,29 @@ header {
   color: black;
 }
 
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+}
+
 nav {
   clear: both;
 }
 
 ul {
-  text-align: center;
   font-size: 0;
 }
 li {
   display: inline-block;
-  width: 25%;
+  width: 20%;
+}
+nav {
+  width: 100%;
 }
 
 nav a {
@@ -129,26 +109,117 @@ nav a:hover {
 
 /*Main styles*/
 
-.content-wrap {
+main {
   max-width: 1500px;
-  margin: 0 auto;
-  padding: 10em 6em;
+  margin-top: 12%;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #0a3641;
+}
+h2 {
+  font-size: 2rem;
+  color: #0a3641;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #0a3641;
+}
+p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: black;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: underline;
+  color: black;
+}
+
+main a:hover {
+  text-decoration: none;
+  color: #fbb251;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  padding: 0.5rem 2rem;
+  width: 10rem;
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+.button-wide {
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 2px solid white;
+  padding: 0.5rem 2rem;
+  width: 25rem;
+  display: inline-block;
+  margin-top: 2rem;
+}
+.button-wide:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.contactinfo {
+  border: 0.2rem solid black;
+  width: 30rem;
+  padding: 2rem 5rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
 }
 
 /*Footer styles*/
 
-footer a:hover {
-  text-decoration: none;
-  color: #fbb251;
-}
 h4 {
   font-size: 20px;
   font-weight: bold;
   color: white;
 }
-h4 ~ p {
-  font-size: 16px;
-  font-weight: lighter;
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #fbb251;
+}
+
+.footer-right a {
+  text-decoration: underline;
+}
+footer p {
   color: white;
 }
 
@@ -159,7 +230,7 @@ h4 ~ p {
 }
 
 .footerbutton {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   border-radius: 0.5rem;
   border: 2px solid white;
@@ -168,16 +239,32 @@ h4 ~ p {
   margin-top: 1rem;
 }
 
-/*Footer grids*/
+.footer-left p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/*Footer grid*/
 
 footer {
-  color: white;
-}
-.content-wrap-footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
   grid-gap: 0.2em;
+  grid-template-areas: "left middle right";
 }
+
+.footer-left {
+  grid-area: left;
+}
+.footer-mid {
+  grid-area: middle;
+}
+.footer-right {
+  grid-area: right;
+}
+
 .footer-section {
   background-color: black;
   padding-left: 3em;
@@ -185,15 +272,105 @@ footer {
   padding-bottom: 1em;
 }
 
-.footer-left p {
-  text-align: center;
+/*Media queries*/
+
+/*Mobile styles*/
+
+@media only screen and (max-width: 480px) {
+  body {
+    margin-top: 7%;
+    min-width: 320px;
+  }
+
+  main {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  /*Header*/
+  .logo {
+    max-width: 100px;
+  }
+
+  .wrap i {
+    margin: 2px;
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 10px;
+  }
+  li {
+    width: 22%;
+  }
+  /*Main*/
+
+  h1 {
+    font-size: 1.7rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .contactinfo {
+    border: 0.2rem solid black;
+    max-width: 20rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+  }
+
+  /*Footer*/
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0.1rem;
+    grid-template-areas:
+      "left left"
+      "middle middle"
+      "right right";
+  }
+
+  .footer-section {
+    padding-bottom: 0.2rem;
+    text-align: center;
+  }
+  .signup-email {
+    display: block;
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .footerbutton {
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    padding: 0.4rem 1.7rem;
+    width: auto;
+    margin-top: 0.5rem;
+  }
+  .footer-left p {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
 }
 
-.footer-right p {
-  text-decoration: underline;
-}
+/*Tablet styles*/
 
-footer a {
-  color: white;
-  text-decoration: none;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 }

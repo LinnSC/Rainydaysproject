@@ -1,17 +1,7 @@
 main {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
   text-align: center;
-}
-
-h1 {
-  font-size: 3rem;
-  color: #0a3641;
-}
-
-fieldset {
-  border: none;
 }
 
 h2 {
@@ -26,15 +16,27 @@ h2 p {
   font-size: 1.1rem;
   font-weight: 600;
 }
-.bold {
-  color: black;
-  font-weight: bold;
+
+fieldset {
+  border: none;
 }
+
 .contact__input {
   display: block;
   padding: 0.5rem;
   width: 30rem;
-  margin: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  max-width: 30rem;
+  min-width: 30rem;
+}
+
+.bold {
+  color: black;
+  font-weight: bold;
 }
 .dropzone {
   border: 0.2rem dashed black;
@@ -49,13 +51,4 @@ h2 p {
 .contactform {
   color: black;
   font-size: 1.5rem;
-}
-.contactinfo {
-  border: 0.2rem solid black;
-  width: 30rem;
-  padding: 2rem 5rem;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6em;
 }

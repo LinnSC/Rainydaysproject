@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rainydays | Home</title>
+    <title>Rainydays | Product</title>
     <meta name="keywords" content="jackets, rain jackets" />
     <meta name="description" content="An online store for rain jackets" />
     <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link href="../../main-styles.css" rel="stylesheet" />
+    <link href="../../Styles/product.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/b4dda9bfdb.js"
       crossorigin="anonymous"
@@ -37,28 +38,46 @@
       </section>
       <nav>
         <ul>
-          <li><a href="html/jackets/womensjackets-p1.html">Women</a></li>
-          <li><a href="html/jackets/mensjackets-p1.html">Men</a></li>
-          <li><a href="html/about.html">About</a></li>
-          <li><a href="html/contact.html">Contact</a></li>
+          <li><a href="../jackets/womensjackets-p1.html">Women</a></li>
+          <li><a href="../jackets/mensjackets-p1.html">Men</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <div class="content-wrap">
-          <h1>Item name</h1>
-          <p>2999,00 kr</p>
-          <p>Size:</p>
-          <p><a href="#size-chart"> Size chart</a></p>
-          <p>Colour</p>
-          <p>
-            <button class="Add-to-chart" type="button">Add to chart</button>
-          </p>
+      <div class="container">
+        <div class="flex-container">
+          <section class="flex1">
+            <img
+              class="product-img"
+              src="../../images/product/product5.jpg"
+              alt=""
+            />
+          </section>
+          <section class="flex2">
+            <h1>Item name</h1>
+            <p class="prize">2999,00 kr</p>
+            <p>Size:</p>
+            <button class="size-btn">XS</button>
+            <button class="size-btn">S</button>
+            <button class="size-btn">M</button>
+            <button class="size-btn">L</button>
+            <button class="size-btn">XL</button>
+            <a class="chart-link" href="#size-chart"> Size chart</a>
+            <p>Colour:</p>
+            <span class="dot yellow-dot"></span
+            ><span class="dot black-dot"></span
+            ><span class="dot blue-dot"></span>
+            <p>
+              <a class="button add-chart" href="../shopping-chart.html"
+                >Add to chart</a
+              >
+              <a href="../favourites.html"><i class="far fa-heart"></i></a>
+            </p>
+          </section>
         </div>
-      </section>
-      <section>
-        <div class="content-wrap">
+        <section class="product-info">
           <h3>Description</h3>
           <p>
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -73,56 +92,68 @@
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua.
           </p>
-        </div>
-      </section>
-      <section>
-        <div class="content-wrap">
-          <h2>Similar jackets</h2>
-          <p>Images of jackets</p>
+        </section>
+      </div>
+      <section class="similar-jackets">
+        <h2>Similar jackets</h2>
+        <div class="similar-img">
+          <img
+            class="s-img j1"
+            src="../../images/product/product1.jpg"
+            alt="similar-jacket1"
+          />
+          <img
+            class="s-img j2"
+            src="../../images/product/product7.jpg"
+            alt="similar-jacket2"
+          />
+          <img
+            class="s-img j3"
+            src="../../images/product/product2.jpg"
+            alt="similar-jacket3"
+          />
         </div>
       </section>
     </main>
     <footer>
-      <div class="content-wrap-footer">
-        <section class="footer-section footer-left">
-          <h4>Become a member</h4>
-          <p>
-            <label for="Signup">
-              Sign up with e-mail to get exlucive offers and information about
-              our brand.</label
-            >
-            <input class="signup-email" id="Signup" name="Signup" />
-          </p>
-          <p>
-            <a href="../supportpages/signedup.html"
-              ><button class="Signup" type="button">Sign up</button></a
-            >
-          </p>
-        </section>
-        <section class="footer-section">
-          <h4>Help</h4>
-          <p>
-            <a href="../supportpages/thisisalink.html">Customer service</a>
-          </p>
-          <p><a href="../supportpages/thisisalink.html">FAQ</a></p>
-          <p><a href="../supportpages/thisisalink.html">Payment</a></p>
-          <p><a href="../supportpages/thisisalink.html">Return</a></p>
-        </section>
-        <section class="footer-section footer-right">
-          <h4>Follow us</h4>
-          <p>
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-          </p>
-          <p>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-          </p>
-          <p><a href="https://twitter.com/" target="_blank">Twitter</a></p>
-          <p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
-          <p>
-            <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-          </p>
-        </section>
-      </div>
+      <section class="footer-section footer-left">
+        <h4>Become a member</h4>
+        <p>
+          <label for="Signup">
+            Sign up with e-mail to get exlucive offers and information about our
+            brand.</label
+          >
+          <input class="signup-email" id="Signup" name="Signup" />
+        </p>
+        <p>
+          <a class="button footerbutton" href="../supportpages/signedup.html"
+            >Sign up</a
+          >
+        </p>
+      </section>
+      <section class="footer-section">
+        <h4>Help</h4>
+        <p>
+          <a href="../supportpages/thisisalink.html">Customer service</a>
+        </p>
+        <p><a href="../supportpages/thisisalink.html">FAQ</a></p>
+        <p><a href="../supportpages/thisisalink.html">Payment</a></p>
+        <p><a href="../supportpages/thisisalink.html">Return</a></p>
+      </section>
+      <section class="footer-section footer-right">
+        <h4>Follow us</h4>
+        <p>
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </p>
+        <p><a href="https://twitter.com/" target="_blank">Twitter</a></p>
+        <p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
+        <p>
+          <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+        </p>
+      </section>
     </footer>
   </body>
 </html>

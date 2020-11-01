@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link href="../main-styles.css" rel="stylesheet" />
+    <link href="../Styles/checkout.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/b4dda9bfdb.js"
       crossorigin="anonymous"
@@ -17,42 +18,37 @@
   </head>
   <body>
     <header>
-      <div class="content-wrap-header">
-        <section class="logo-icons-container">
-          <div class="wrap rdlogo">
-            <a href="../index.html">
-              <img
-                src="../images/rainydayslogo.png"
-                alt="Rainydays logo"
-                class="logo"
-            /></a>
-          </div>
-          <div class="wrap icons">
-            <a href="search.html"><i class="fas fa-search"></i></a>
-            <a href="favourites.html"><i class="fas fa-heart"></i></a>
-            <a href="shopping-chart.html"
-              ><i class="fas fa-shopping-cart"></i
-            ></a>
-            <a href="login.html"><i class="fas fa-user"></i></a>
-          </div>
-        </section>
-        <nav>
-          <ul>
-            <li><a href="jackets/womensjackets-p1.html">Women</a></li>
-            <li><a href="jackets/mensjackets-p1.html">Men</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <section class="logo-icons-container">
+        <div class="wrap rdlogo">
+          <a href="../index.html">
+            <img
+              src="../images/rainydayslogo.png"
+              alt="Rainydays logo"
+              class="logo"
+          /></a>
+        </div>
+        <div class="wrap icons">
+          <a href="search.html"><i class="fas fa-search"></i></a>
+          <a href="favourites.html"><i class="fas fa-heart"></i></a>
+          <a href="shopping-chart.html"><i class="fas fa-shopping-cart"></i></a>
+          <a href="login.html"><i class="fas fa-user"></i></a>
+        </div>
+      </section>
+      <nav>
+        <ul>
+          <li><a href="jackets/womensjackets-p1.html">Women</a></li>
+          <li><a href="jackets/mensjackets-p1.html">Men</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <div class="content-wrap">
-        <h1>Check out</h1>
+      <section class="box1">
         <h2>Check out as</h2>
-        <section>
-          <form action="form-success.php" method="GET">
-            <h3>Member</h3>
+        <form action="form-success.php" method="GET">
+          <fieldset>
+            <legend>Member</legend>
             <label class="form-label" for="email">E-mail</label>
             <input
               type="email"
@@ -69,12 +65,12 @@
               class="contact__input"
               required
             />
-            <input type="submit" value="Sign in" class="button" />
-          </form>
-        </section>
-        <section>
-          <form action="form-success.php" method="GET">
-            <h3>Guest</h3>
+          </fieldset>
+          <input type="submit" value="Sign in" class="button" />
+        </form>
+        <form action="form-success.php" method="GET">
+          <fieldset>
+            <legend>Guest</legend>
             <label class="form-label" for="email-guest">E-mail</label>
             <input
               type="email-guest"
@@ -103,9 +99,9 @@
                 />
               </div>
               <div class="row-30">
-                <label class="form-label" for="street">Street No</label>
+                <label class="form-label" for="street-number">Street No</label>
                 <input
-                  type="number"
+                  type="text"
                   name="street-number"
                   id="street-number"
                   class="contact__input"
@@ -123,27 +119,23 @@
               class="contact__input"
               required
             />
+            <label class="form-label" for="postal-code">Postal code</label>
+            <label class="form-label city-label" for="city">City</label>
             <div class="row">
-              <div class="row-30">
-                <label class="form-label" for="postal-code">Postal code</label>
-                <input
-                  type="number"
-                  name="postal-code"
-                  id="postal-code"
-                  class="contact__input"
-                  required
-                />
-              </div>
-              <div class="row-70">
-                <label class="form-label" for="street">City</label>
-                <input
-                  type="text"
-                  name="street-number"
-                  id="street-number"
-                  class="contact__input"
-                  required
-                />
-              </div>
+              <input
+                type="text"
+                name="postal-code"
+                id="postal-code"
+                class="contact__input row-small"
+                required
+              />
+              <input
+                type="text"
+                name="city"
+                id="city"
+                class="contact__input row-wide"
+                required
+              />
             </div>
             <label class="form-label" for="country">Country</label>
             <input
@@ -156,135 +148,180 @@
             />
             <label class="form-label" for="phone-number">Phone number</label>
             <input
-              type="number"
+              type="tel"
               name="phone-number"
               id="phone-number"
-              class="phone-number"
+              class="contact__input"
               placeholder="+47"
               required
             />
-          </form>
-        </section>
-        <section>
-          <h3>Shipping</h3>
-          <p>
+          </fieldset>
+          <fieldset>
+            <legend>Shipping</legend>
+            <div class="radio-btn">
+              <input
+                class="radio"
+                type="radio"
+                id="regular"
+                value="regular"
+                name="shipping"
+              />
+              <label for="regular"> Regular shipping 49,- </label>
+            </div>
+            <div class="radio-btn">
+              <input
+                class="radio"
+                type="radio"
+                id="express"
+                value="express"
+                name="shipping"
+              />
+              <label for="express"> Express shipping 99,-</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Payment</legend>
+            <div class="radio-btn">
+              <input
+                class="radio"
+                type="radio"
+                id="creditcard"
+                value="creditcard"
+                name="payment"
+              />
+              <label for="creditcard"> Credit card </label>
+            </div>
+            <div class="radio-btn">
+              <input
+                class="radio"
+                type="radio"
+                id="paypal"
+                value="paypal"
+                name="payment"
+              />
+              <label for="paypal"> Paypal</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Credit card</legend>
+            <label class="form-label" for="card-holder">Card holder</label>
             <input
-              type="checkbox"
-              id="Regular shipping 49 kr"
-              name="Regular shipping 49 kr"
+              type="text"
+              name="card-holder"
+              id="card-holder"
+              class="contact__input"
+              required
             />
-            <label for="Regular shipping 49 kr"> Regular shipping / 49,-</label>
-          </p>
-          <p>
+            <label class="form-label" for="card-number">Card number</label>
             <input
-              type="checkbox"
-              id="Express shipping 99 kr"
-              name="Express shipping 99 kr"
+              type="text"
+              name="card-number"
+              id="card-number"
+              class="contact__input"
+              required
             />
-            <label for="Express shipping 99 kr"> Express shipping/ 99,-</label>
-          </p>
-        </section>
-        <section>
-          <h3>Payment</h3>
-          <p>
-            <input type="checkbox" id="creditcard" name="creditcard" />
-            <label for="creditcard"> Credit card</label>
-          </p>
-          <p>
-            <input type="checkbox" id="PayPal" name="PayPal" /><label
-              for="PayPal"
-            >
-              PayPal</label
-            >
-          </p>
-        </section>
-        <section>
-          <h3>Credit card</h3>
-          <p>
-            <label for="cardholder"> Card holder*</label>
-            <input name="cardholder" id="cardholder" />
-          </p>
-          <p>
-            <label for="cardnumber"> Card number*</label>
-            <input name="cardnumber" id="cardnumber" />
-          </p>
-          <p>
-            <label for="date and year"> Date/year*</label>
-            <input name="date and year" id="date and year" />
-            <label for="CVC or CVV"> CVC/ CVV*</label>
-            <input name="CVC or CVV" id="CVC or CVV" />
-          </p>
-        </section>
-        <section>
-          <p>
+            <label class="form-label" for="date">Date</label>
+            <label class="cvc-label form-label" for="CVC">CVC/CVV</label>
+            <div class="row">
+              <input
+                type="text"
+                name="date"
+                id="date"
+                class="contact__input row-50"
+                required
+              />
+              <input
+                type="text"
+                name="CVC"
+                id="CVC"
+                class="contact__input row-50"
+                required
+              />
+            </div>
             <input
-              type="checkbox"
-              id="i agree to the terms and conditions"
-              name="i agree to the terms and conditions"
+              class="terms"
+              type="radio"
+              id="terms"
+              name="terms"
+              required
             />
-            <label for="i agree to the terms and conditions">
-              I agree to the terms and conditions*</label
-            >
-          </p>
-          <p>
-            <input type="submit" value="Place order" class="button-large" />
-          </p>
-        </section>
-        <section>
-          <h2>Check out summary</h2>
-          <p>Item name 2999,00 kr</p>
-          <p>Size M</p>
-          <p><a href="supportpages/thisisalink.html">Remove item</a></p>
-          <p>Order total 2999,00 kr</p>
-          <p>
-            <a href="supportpages/checkoutsuccess.html">
-              <button class="Place order" type="button">Place order</button></a
-            >
-          </p>
-        </section>
-      </div>
+            <label for="terms"> I agree to the terms and conditions*</label>
+          </fieldset>
+          <input type="submit" value="Place order" class="button-wide" />
+        </form>
+      </section>
+      <section class="box2">
+        <h2>Check out summary</h2>
+        <div class="box2-flex">
+          <section class="flex1">
+            <img
+              class="product-img"
+              src="../images/product/product6.jpg"
+              alt="product image"
+            />
+          </section>
+          <section class="flex2">
+            <p>Item name <span> 2999,00 kr </span></p>
+            <p>Size M</p>
+            <p>
+              <label for="quantity">Quantity:</label>
+              <input
+                type="number"
+                id="quantity"
+                class="quantity"
+                name="quantity"
+                min="1"
+                max=""
+                placeholder="1"
+              />
+            </p>
+            <a href="supportpages/thisisalink.html">Remove item</a>
+            <hr class="line" />
+            <p>Order total <span> 2999,00 kr</span></p>
+            <input type="submit" value="Place order" class="button-wide" />
+          </section>
+        </div>
+      </section>
     </main>
     <footer>
-      <div class="content-wrap-footer">
-        <section class="footer-section footer-left">
-          <h4>Become a member</h4>
-          <p>
-            <label for="Signup">
-              Sign up with e-mail to get exlucive offers and information about
-              our brand.</label
-            >
-            <input class="signup-email" id="Signup" name="Signup" />
-          </p>
-          <p>
-            <a href="supportpages/signedup.html"
-              ><button class="Signup" type="button">Sign up</button></a
-            >
-          </p>
-        </section>
-        <section class="footer-section">
-          <h4>Help</h4>
-          <p>
-            <a href="supportpages/thisisalink.html">Customer service</a>
-          </p>
-          <p><a href="supportpages/thisisalink.html">FAQ</a></p>
-          <p><a href="supportpages/thisisalink.html">Payment</a></p>
-          <p><a href="supportpages/thisisalink.html">Return</a></p>
-        </section>
-        <section class="footer-section footer-right">
-          <h4>Follow us</h4>
-          <p>
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-          </p>
-          <p>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-          </p>
-          <p><a href="https://twitter.com/" target="_blank">Twitter</a></p>
-          <p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
-          <p>
-            <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-          </p>
-        </section>
-      </div>
+      <section class="footer-section footer-left">
+        <h4>Become a member</h4>
+        <p>
+          <label for="Signup">
+            Sign up with e-mail to get exlucive offers and information about our
+            brand.</label
+          >
+          <input class="signup-email" id="Signup" name="Signup" />
+        </p>
+        <p>
+          <a href="supportpages/signedup.html"
+            ><button class="Signup" type="button">Sign up</button></a
+          >
+        </p>
+      </section>
+      <section class="footer-section footer-mid">
+        <h4>Help</h4>
+        <p>
+          <a href="supportpages/thisisalink.html">Customer service</a>
+        </p>
+        <p><a href="supportpages/thisisalink.html">FAQ</a></p>
+        <p><a href="supportpages/thisisalink.html">Payment</a></p>
+        <p><a href="supportpages/thisisalink.html">Return</a></p>
+      </section>
+      <section class="footer-section footer-right">
+        <h4>Follow us</h4>
+        <p>
+          <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </p>
+        <p>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </p>
+        <p><a href="https://twitter.com/" target="_blank">Twitter</a></p>
+        <p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
+        <p>
+          <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+        </p>
+      </section>
     </footer>
   </body>
 </html>
