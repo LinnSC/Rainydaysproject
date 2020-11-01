@@ -38,8 +38,11 @@ h1 {
 
 @media only screen and (max-width: 480px) {
   .content-wrap {
+    margin-left: 10%;
+    margin-right: 10%;
     display: block;
   }
+
   .cell-img {
     text-align: center;
   }
@@ -49,11 +52,13 @@ h1 {
   .hide {
     display: none;
   }
+}
+/*Tablet styles*/
 
-  .img1 {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .content-wrap {
+    margin-left: 10%;
+    margin-right: 10%;
     display: block;
-    background: url(../images/about/1vmmobile.jpg) no-repeat;
-    max-width: 480px;
-    max-height: 100px;
   }
 }
