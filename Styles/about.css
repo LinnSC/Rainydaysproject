@@ -49,4 +49,11 @@ h1 {
   .hide {
     display: none;
   }
+
+  .img1 {
+    display: block;
+    background: url(../images/about/1vmmobile.jpg) no-repeat;
+    max-width: 480px;
+    max-height: 100px;
+  }
 }
