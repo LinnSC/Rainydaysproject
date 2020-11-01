@@ -1,7 +1,4 @@
-main {
-  margin-bottom: 10%;
-}
-
+/*box1*/
 fieldset {
   border: none;
   margin-top: 2rem;
@@ -20,53 +17,57 @@ legend {
 
 .contact__input {
   display: block;
-  padding: 0.5rem;
-  width: 25rem;
+  width: 80%;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+  padding: 0.5rem;
 }
 
 .row-small {
-  width: 5.5rem;
+  width: 20%;
   display: inline;
 }
 .row-wide {
-  width: 18.5rem;
+  width: 59%;
   display: inline;
-  margin-left: 0.7rem;
+  margin-left: 1%;
 }
 
 .city-label {
-  margin-left: 0.7rem;
+  margin-left: 3%;
 }
 
 .radio-btn {
   display: block;
-}
-
-.radio-btn {
   margin-top: 2%;
 }
 
+.radio-lable {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .row-50 {
-  width: 5rem;
+  width: 25%;
   display: inline;
 }
 .cvc-label {
-  margin-left: 3rem;
+  margin-left: 18%;
 }
 
 .terms {
   margin-top: 5%;
 }
 
-.product-img {
-  max-width: 50%;
-  height: auto;
+/*box2*/
+
+h2 {
+  font-size: 2rem;
 }
 
 .box2 p {
-  font-size: 1.2rem;
+  color: #0a3641;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 1%;
 }
@@ -92,33 +93,106 @@ legend {
 .box1 {
   grid-area: box1;
   border: 2px solid black;
-  padding: 4%;
+  padding: 6% 4%;
 }
 .box2 {
   grid-area: box2;
   border: 2px solid black;
-  padding: 4%;
+  padding: 6% 4%;
 }
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-gap: 5%;
+  grid-gap: 4%;
   grid-template-areas:
-    "box1 box1 box2 box2"
-    "box1 box1 . . ";
+    "box1  box2"
+    "box1  . ";
 }
 
 /*Flex*/
 
 .box2-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex1 {
+  flex: 2;
+}
+
+.product-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex2 {
   flex: 1;
 }
-.flex2 {
-  flex: 2;
+
+/*Media queries*/
+
+/*Mobile and tablet styles*/
+
+@media only screen and (max-width: 800px) {
+  main {
+    margin-top: 20%;
+    margin-bottom: 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5%;
+    grid-template-areas:
+      "box2"
+      "box1";
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .box2 p {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .box2 a {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  legend {
+    font-size: 1.2rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .contact__input {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    padding: 0.3rem;
+  }
+
+  .radio-btn {
+    margin-top: 10px;
+  }
+}
+
+/*Tablet styles*/
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  main {
+    margin-top: 20%;
+    margin-bottom: 35%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5%;
+    grid-template-areas:
+      "box2"
+      "box1";
+  }
 }

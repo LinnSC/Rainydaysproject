@@ -28,10 +28,12 @@
           /></a>
         </div>
         <div class="wrap icons">
-          <a href="search.html"><i class="fas fa-search"></i></a>
-          <a href="favourites.html"><i class="fas fa-heart"></i></a>
-          <a href="shopping-chart.html"><i class="fas fa-shopping-cart"></i></a>
-          <a href="login.html"><i class="fas fa-user"></i></a>
+          <a href="search.html"><i class="icon fas fa-search"></i></a>
+          <a href="favourites.html"><i class="icon fas fa-heart"></i></a>
+          <a href="shopping-chart.html"
+            ><i class="icon fas fa-shopping-cart"></i
+          ></a>
+          <a href="login.html"><i class="icon fas fa-user"></i></a>
         </div>
       </section>
       <nav>
@@ -46,110 +48,132 @@
     <main>
       <h1>LOGIN</h1>
       <form action="form-success.php" method="GET">
-        <fieldset class="loginform">
-          <label for="email">E-mail</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="contact__input"
-            required
-          />
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            class="contact__input"
-            required
-          />
-          <div class="forgotpassword">
-            <a href="forgotpassword.html">Forgot password</a>
-          </div>
-        </fieldset>
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="contact__input"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="contact__input"
+          required
+        />
+        <div class="forgotpassword">
+          <a href="forgotpassword.html">Forgot password</a>
+        </div>
         <input type="submit" value="Log in" class="button" />
       </form>
       <h2>NOT A MEMBER YET?</h2>
-      <h3>Create an account</h3>
+      <h3>Create an account:</h3>
       <form action="form-success.php" method="GET">
-        <fieldset class="contactform">
-          <label for="name">First name</label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="contact__input"
-            required
-          />
-          <label for="name">Last name</label>
-          <input
-            type="text"
-            name="topic"
-            id="topic"
-            class="contact__input"
-            required
-          />
-          <label for="email">E-mail</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="contact__input"
-            required
-          />
-          <label for="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            class="contact__input"
-            required
-          />
-        </fieldset>
+        <label for="name">First name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="contact__input"
+          required
+        />
+        <label for="name">Last name</label>
+        <input
+          type="text"
+          name="topic"
+          id="topic"
+          class="contact__input"
+          required
+        />
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="contact__input"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          class="contact__input"
+          required
+        />
         <input type="submit" value="Sign up" class="button" />
       </form>
     </main>
     <footer>
-      <div class="content-wrap-footer">
-        <section class="footer-section footer-left">
-          <h4>Become a member</h4>
-          <p>
-            <label for="Signup">
-              Sign up with e-mail to get exlucive offers and information about
-              our brand.</label
-            >
-            <input class="signup-email" id="Signup" name="Signup" />
-          </p>
-          <p>
-            <a href="supportpages/signedup.html"
-              ><button class="Signup" type="button">Sign up</button></a
-            >
-          </p>
-        </section>
-        <section class="footer-section">
-          <h4>Help</h4>
-          <p>
-            <a href="supportpages/thisisalink.html">Customer service</a>
-          </p>
-          <p><a href="supportpages/thisisalink.html">FAQ</a></p>
-          <p><a href="supportpages/thisisalink.html">Payment</a></p>
-          <p><a href="supportpages/thisisalink.html">Return</a></p>
-        </section>
-        <section class="footer-section footer-right">
-          <h4>Follow us</h4>
-          <p>
-            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-          </p>
-          <p>
-            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-          </p>
-          <p><a href="https://twitter.com/" target="_blank">Twitter</a></p>
-          <p><a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
-          <p>
-            <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
-          </p>
-        </section>
-      </div>
+      <section class="footer-section footer-left">
+        <h4>Become a member</h4>
+        <p>
+          <label for="Signup">
+            Sign up with e-mail to get exlucive offers and information about our
+            brand.</label
+          >
+          <input class="signup-email" id="Signup" name="Signup" />
+        </p>
+        <p>
+          <a class="button footerbutton" href="supportpages/signedup.html"
+            >Sign up</a
+          >
+        </p>
+      </section>
+      <section class="footer-section footer-mid">
+        <h4>Help</h4>
+        <p>
+          <a href="supportpages/thisisalink.html"
+            ><i class="fas fa-circle"></i>Customer service</a
+          >
+        </p>
+        <p>
+          <a href="supportpages/thisisalink.html"
+            ><i class="fas fa-circle"></i>FAQ</a
+          >
+        </p>
+        <p>
+          <a href="supportpages/thisisalink.html"
+            ><i class="fas fa-circle"></i>Payment</a
+          >
+        </p>
+        <p>
+          <a href="supportpages/thisisalink.html"
+            ><i class="fas fa-circle"></i>Return</a
+          >
+        </p>
+      </section>
+      <section class="footer-section footer-right">
+        <h4>Follow us</h4>
+        <p>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="social fab fa-facebook-square"></i>Facebook</a
+          >
+        </p>
+        <p>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="social fab fa-instagram"></i>Instagram</a
+          >
+        </p>
+        <p>
+          <a href="https://twitter.com/" target="_blank"
+            ><i class="social fab fa-twitter-square"></i>Twitter</a
+          >
+        </p>
+        <p>
+          <a href="https://www.youtube.com/" target="_blank"
+            ><i class="social fab fa-youtube-square"></i>Youtube</a
+          >
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><i class="social fab fa-linkedin"></i>Linkedin</a
+          >
+        </p>
+      </section>
     </footer>
   </body>
 </html>
